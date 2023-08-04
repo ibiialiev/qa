@@ -1,0 +1,984 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/site.webmanifest">
+
+    <link rel="stylesheet" href="csstool.css">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <meta charset="UTF-8">
+    <title>IzatBlv</title>
+    <style>
+        .span_hide, .hide {
+            display: none
+        }
+
+        .eng, .hide {
+            display: none
+        }
+
+        .td0 {
+            text-align: center
+        }
+
+        .td2 {
+            width: 70%
+        }
+
+        .td1 {
+            width: 50%;
+            text-align: right;
+        }
+
+        .page_row {
+            /*min-height: 60vh;*/
+            padding-bottom: 5vh;
+        }
+
+        .page_container {
+            background: rgba(255, 255, 255, 0.9);
+            margin-top: 5vh;
+            margin-bottom: 5vh;
+            padding-top: 5vh;
+        }
+
+        .fon {
+            background-attachment: fixed
+        }
+
+        body {
+            min-height: 100vh;
+        }
+
+        @media (max-width: 767px) {
+            h3 {
+                text-align: center
+            }
+
+            .bl_img {
+                order: 2;
+            }
+
+            .bl_text {
+                order: 1;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            .container {
+                max-width: 90%
+            }
+        }
+    </style>
+</head>
+<body class="fon imgbg">
+<div class="container page_container" id="content">
+    <div class="row page_row">
+        <div class="col-md-12 bl_img text_possition3">
+            <button id="rus" class="btn btn-primary" onclick="rus_show()">Русский</button>
+            <button id="eng" class="btn btn-primary" onclick="eng_show()">English</button>
+        </div>
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/ava2.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text rus">
+            <h3>
+                Инженер контроля качества
+                <br>
+                Биялиев Изат
+            </h3>
+            <b>Коротко о себе</b>
+            <li>Работаю в <a href="https://indrive.com/" target="_blank">inDrive</a> на позиции Senior Engineer</li>
+            <li>Люблю автотестирование</li>
+            <li>Планирую свое обучение</li>
+            <!--            <b>Цель</b>-->
+            <!--            <li>Найм в компанию на должность - QA Engineer (ручное+автоматизированное), на удаленном режиме</li>-->
+        </div>
+        <div class="col-md-7 bl_text eng">
+            <h3>
+                Quality Assurance Engineer
+                <br>
+                Izat Biialiev
+
+            </h3>
+            <b>Shortly about myself</b>
+            <li>I work in <a href="https://indrive.com/" target="_blank">inDrive</a> a Senior Engineer</li>
+            <li>I love autotesting</li>
+            <li>I plan my studies</li>
+            <!--            <b>Job goal</b>-->
+            <!--            <li>Recruitment to the company for the position of QA Engineer (manual+automation), remotely</li>-->
+            <br>
+        </div>
+    </div>
+    <p class="rus">
+        <b>Содержание</b>
+        <br><a href="#prsk">Навыки</a>
+        <br><a href="#sert">Сертификаты</a>
+        <br><a href="#ex">Опыт работы</a>
+        <br><a href="#contact">Контакты</a>
+    </p>
+    <p class="eng">
+        <b>Content</b>
+        <br><a href="#prsk">Skills</a>
+        <br><a href="#sert">Certificates</a>
+        <br><a href="#ex">Work experience</a>
+        <br><a href="#contact">Contact</a>
+    </p>
+    <div class="row page_row" id="prsk">
+        <div class="col-md-12">
+            <h3 class="rus">Навыки</h3>
+            <h3 class="eng">Skills</h3>
+        </div>
+
+        <div class="col-md-4 rus"><b>Виды тестирования</b>
+        </div>
+        <div class="col-md-4 eng"><b>Types of testing</b>
+        </div>
+        <div class="col-md-8 rus">
+            <p>
+                Web - ручное, автоматизированное (UI, API)<br>
+                Mobile - ручное (Android, iOS)
+            </p>
+        </div>
+        <div class="col-md-8 eng">
+            <p>
+                Web - manual, automation (UI, API)<br>
+                Mobile - manual (Android, iOS)
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Стек Ruby</b>
+            <b class="eng">Ruby stack</b>
+        </div>
+        <div class="col-md-8">
+            <p>
+                BDD - Cucumber<br>
+                UI - Capybara, Selenium<br>
+                Unit - RSpec<br>
+                <span class="rus">Демонстрации</span> <span class="eng">Demonstrations</span> - <a
+                    href="https://youtu.be/DunUD4vh_Vo" target="_blank">Cucumber Capybara</a>, <a
+                    href="https://youtu.be/VCVcELcDCgo" target="_blank">Selenium RSpec</a>, <a
+                    href="https://rubyrailsdemo.herokuapp.com" target="_blank">Ruby on Rails on Heroku</a>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Стек Java</b>
+            <b class="eng">Java stack</b>
+        </div>
+        <div class="col-md-8">
+            <p>
+                UI - Selenide, Selenium<br>
+                Unit - JUnit<br>
+                <span class="rus">Демонстрации</span> <span class="eng">Demonstrations</span> - <a
+                    href="https://youtu.be/3sOWNowCZTY" target="_blank">JUnit</a>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Стек Python</b>
+            <b class="eng">Python stack</b>
+        </div>
+        <div class="col-md-8">
+            <p>
+                UI - Selenium<br>
+                <span class="rus">Демонстрации</span> <span class="eng">Demonstrations</span> - <a
+                    href="https://youtu.be/zbIIpkq719Y" target="_blank">Selenium Python</a>
+            </p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Непрерывная интеграция</b>
+            <b class="eng">Continuous Integration</b>
+        </div>
+        <div class="col-md-8">
+            <p>Jenkins, Selenium Grid, Docker, VM Ubuntu</p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">API тестирование</b>
+            <b class="eng">API testing</b>
+        </div>
+        <div class="col-md-8">
+            <p>Postman, Swagger</p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">База данных</b>
+            <b class="eng">Database</b>
+        </div>
+        <div class="col-md-8">
+            <p>SQL, PostgreSQL</p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Работа с репозиториями</b>
+            <b class="eng">Working with repositories</b>
+        </div>
+        <div class="col-md-8">
+            <p>Git, SSH</p>
+        </div>
+
+        <div class="col-md-4">
+            <b class="rus">Баг-трекинг, документация</b>
+            <b class="eng">Bug tracking, documentation</b>
+        </div>
+        <div class="col-md-8">
+            <p>Jira, Zephyr, Redmine</p>
+        </div>
+    </div>
+
+    <div class="row page_row" id="sert">
+        <div class="col-md-12">
+            <h3 class="rus">Сертификаты</h3>
+            <h3 class="eng">Certificates</h3>
+            <table width="100%">
+                <tr>
+                    <td width="50%">
+                        <a href="http://cert.software-testing.ru/334962097345528393" target="_blank"><img
+                                data-src="img/c aut.jpg" class="lazy imgw100"></a>
+                    </td>
+                    <td width="50%">
+                        <a href="https://stepik.org/cert/1709721" target="_blank"><img data-src="img/c py.jpg"
+                                                                                       class="lazy imgw100"></a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="row page_row" id="ex">
+        <div class="col-md-12 rus">
+            <h3>Опыт работы</h3>
+        </div>
+        <div class="col-md-12 eng">
+            <h3>Work experience</h3>
+        </div>
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/dar.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text rus">
+            <h3>ТОО DAR tech</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Период</b>
+                </div>
+                <div class="col-md-8">
+                    <p>06.2020-07.2022 (2 года)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Тип занятости</b>
+                </div>
+                <div class="col-md-8">
+                    <p>штатно</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Работодатель</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Казахстан, Алматы</p>
+                </div>
+            </div>
+            <span class="hide dar">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Практика</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <b>Планирование</b><br>
+                        Баг-трекинг Jira<br>
+                        Введение тестовой документации Zephyr Scale<br>
+                        Оценка времени, Planning Poker, планирование спринта<br>
+                        Работа в разных проектах, web, mobile<br>
+                            <b>Автоматизированное тестирование</b><br>
+                        Планирование, написание, поддержание Selenium автотестов стороны frontend<br>
+                        <b>CI</b><br>
+                        Поднятие, внедрение CI инфраструктуры<br>
+                        <b>Ручное тестирование</b><br>
+                        Ручное тестирование в соответствии тест плану<br>
+                        Нахождение багов<br>
+                        Оформление багов в Jira<br>
+                        Проверка исправления багов<br>
+                    </p>
+                </div>
+            </div>
+                                <div class="row">
+                <div class="col-md-4">
+                    <b>Инструменты</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Zephyr Scale <br>
+                        Selenium <br>
+                        Cucumber <br>
+                        Capybara <br>
+                        Jenkins <br>
+                        Selenium Grid <br>
+                    </p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <b>Достижения</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                            Инициализация введения ретроспектив
+                            <br>Внедрения CI и автоматизированного тестирования
+                            <br>Рост уровня должности, от midle до senior за год
+                            <br><a href="https://5q.media/2022/06/14/kto-takie-qa-inzhenery-v-it/" target="_blank">Ведения QA стажировки в рамках DAR Academy</a>
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_dar btn btn-info" onclick="show_dar()">Подробнее</button>
+        </div>
+        <div class="col-md-7 bl_text eng">
+            <h3>DAR tech, LLP</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Period</b>
+                </div>
+                <div class="col-md-8">
+                    <p>06.2020-07.2022 (2 years)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Type of employment</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Full-time</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Employer</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Kazakhstan, Almaty</p>
+                </div>
+            </div>
+            <span class="hide dar">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Practice</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <b>Planning</b><br>
+                        Jira bug-tracking<br>
+                        Maintaining Zephyr Scale test documentation<br>
+                        Time estimation, Planning Poker, Sprint planning<br>
+                        Work in different projects, web, mobile<br>
+                            <b>Automated testing</b><br>
+                        Planning, writing, maintaining Selenium frontend autotests<br>
+                        <b>CI</b><br>
+                        Raising, implementing CI infrastructure<br>
+                        <b>Manual testing</b><br>
+                        Manual testing according to the test plan<br>
+                        Finding bugs<br>
+                        Bug reporting in Jira<br>
+                        Checking for bug fixes<br>
+                    </p>
+                </div>
+            </div>
+                                <div class="row">
+                <div class="col-md-4">
+                    <b>Tools</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Zephyr Scale <br>
+                        Selenium <br>
+                        Cucumber <br>
+                        Capybara <br>
+                        Jenkins <br>
+                        Selenium Grid <br>
+                    </p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <b>Achievements</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                            Initializing the Introduction of Retrospectives
+                            <br>Implementation of CI and automated testing
+                            <br>Job level growth, from middle to senior in a year
+                            <br><a href="https://5q.media/2022/06/14/kto-takie-qa-inzhenery-v-it/" target="_blank">Conducting QA internships within DAR Academy</a>
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_dar btn btn-info" onclick="show_dar()">More</button>
+        </div>
+    </div>
+    <div class="row page_row" id="exalseco">
+        <div class="col-md-12">
+        </div>
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/asc.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text rus">
+            <h3>АО "АЛСЕКО"</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Период</b>
+                </div>
+                <div class="col-md-8">
+                    <p>07.2019-06.2020 (1 год)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Тип занятости</b>
+                </div>
+                <div class="col-md-8">
+                    <p>штатно</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Работодатель</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Казахстан, Алматы</p>
+                </div>
+            </div>
+            <span class="hide alseco">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Практика</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <b>Планирование</b><br>
+                        Баг-трекинг Jira<br>
+                        Оценка времени<br>
+                        Отчетность затраченного времени<br>
+                        Введение тестовой документации<br>
+                        Планирование тестирования в рамках спринта<br>
+                        Разработка тест планов по ТЗ<br>
+                            <b>Автоматизированное тестирование</b><br>
+                        Планирование, написание, поддержание API автотестов стороны backend<br>
+                        Планирование, написание, поддержание Selenium автотестов стороны frontend<br>
+                        <b>CI</b><br>
+                        Тестирование сред test, stage посредством Jenkins и Docker<br>
+                        <b>Ручное тестирование</b><br>
+                        Ручное тестирование в соответствии тест плану<br>
+                        Нахождение багов<br>
+                        Оформление багов в Jira<br>
+                        Проверка исправления багов<br>
+                    </p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <b>Инструменты</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Postman <br>
+                        Selenium <br>
+                        Cucumber <br>
+                        Capybara <br>
+                        Jenkins <br>
+                        Docker <br>
+                        Git <br>
+                    </p>
+                </div>
+            </div>
+
+            </span>
+            <button class="show_alseco btn btn-info" onclick="show_alseco()">Подробнее</button>
+
+        </div>
+        <div class="col-md-7 bl_text eng">
+            <h3>ALSECO, JSC</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Period</b>
+                </div>
+                <div class="col-md-8">
+                    <p>07.2019-06.2020 (1 year)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Type of employment</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Full-time</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Employer</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Kazakhstan, Almaty</p>
+                </div>
+            </div>
+            <span class="hide alseco">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Practice</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        <b>Planning</b><br>
+                        Jira bug-tracking<br>
+                        Time estimation<br>
+                        Time spent reporting<br>
+                        Maintaining test documentation<br>
+                        Sprint test planning<br>
+                        Development of test plans<br>
+                            <b>Automated testing</b><br>
+                        Planning, writing, maintaining backend autotest API<br>
+                        Planning, writing, maintaining Selenium frontend autotests<br>
+                        <b>CI</b><br>
+                        Testing test, stage environments with Jenkins and Docker<br>
+                        <b>Manual testing</b><br>
+                        Manual testing according to the test plan<br>
+                        Finding bugs<br>
+                        Bug reporting in Jira<br>
+                        Checking for bug fixes<br>
+                    </p>
+                </div>
+            </div>
+                <div class="row">
+                <div class="col-md-4">
+                    <b>Tools</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Postman <br>
+                        Selenium <br>
+                        Cucumber <br>
+                        Capybara <br>
+                        Jenkins <br>
+                        Docker <br>
+                        Git <br>
+                    </p>
+                </div>
+            </div>
+
+            </span>
+            <button class="show_alseco btn btn-info" onclick="show_alseco()">More</button>
+
+        </div>
+    </div>
+    <div class="row page_row" id="extk">
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/tc.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text rus">
+            <h3>ТурбоКонтракт</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Период</b>
+                </div>
+                <div class="col-md-8">
+                    <p>10.2018-06.2019 (9 месяцев)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Тип занятости</b>
+                </div>
+                <div class="col-md-8">
+                    <p>удаленно</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Работодатель</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Россия, Москва</p>
+                </div>
+            </div>
+            <span class="hide tk">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Практика</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        баг трекинг <br>
+                        ручное тестирование <br>
+                        автотестирование API<br>
+                        ежедневные Skype совещания
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Инструменты</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Redmine <br>
+                        Postman <br>
+                        Git <br>
+                        SSH
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_tk btn btn-info" onclick="show_tk()">Подробнее</button>
+        </div>
+        <div class="col-md-7 bl_text eng">
+            <h3>TurboContract</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Period</b>
+                </div>
+                <div class="col-md-8">
+                    <p>10.2018-06.2019 (9 months)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Type of employment</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Remotely</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Employer</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Russia, Moscow</p>
+                </div>
+            </div>
+            <span class="hide tk">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Practice</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Bug-tracking <br>
+                        Manual testing <br>
+                        API autotest<br>
+                        Daily Skype meetings
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Tools</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Redmine <br>
+                        Postman <br>
+                        Git <br>
+                        SSH
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_tk btn btn-info" onclick="show_tk()">More</button>
+        </div>
+    </div>
+    <div class="row page_row" id="exmers">
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/merc.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text rus">
+            <h3>Daimler AG</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Период</b>
+                </div>
+                <div class="col-md-8">
+                    <p>11.2017-06.2018 (8 месяцев)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Тип занятости</b>
+                </div>
+                <div class="col-md-8">
+                    <p>удаленно</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Работодатель</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Германия</p>
+                </div>
+            </div>
+            <span class="hide mers">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Практика</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        автоматизированное тестирование <br>
+                        улучшение текущих автотестов <br>
+                        написания новых автотестов <br>
+                        отчетность на английском языке
+                    </p>
+                </div>
+            </div>
+                            <div class="row">
+                <div class="col-md-4">
+                    <b>Инструменты</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Selenium <br>
+                        Ruby on Rails <br>
+                        Git
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_mers btn btn-info" onclick="show_mers()">Подробнее</button>
+        </div>
+        <div class="col-md-7 bl_text eng">
+            <h3>Daimler AG</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Period</b>
+                </div>
+                <div class="col-md-8">
+                    <p>11.2017-06.2018 (8 months)</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Type of employment</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Remotely</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Employer</b>
+                </div>
+                <div class="col-md-8">
+                    <p>Germany</p>
+                </div>
+            </div>
+            <span class="hide mers">
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Practice</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Automated testing <br>
+                        Improvement of current autotests <br>
+                        Writing new autotests <br>
+                        Reporting in English
+                    </p>
+                </div>
+            </div>
+                            <div class="row">
+                <div class="col-md-4">
+                    <b>Tools</b>
+                </div>
+                <div class="col-md-8">
+                    <p>
+                        Jira <br>
+                        Selenium <br>
+                        Ruby on Rails <br>
+                        Git
+                    </p>
+                </div>
+            </div>
+            </span>
+            <button class="show_mers btn btn-info" onclick="show_mers()">More</button>
+        </div>
+    </div>
+    <div class="row page_row" id="contact">
+        <div class="col-md-5 bl_img">
+            <div class="">
+                <img data-src="img/qr telegram.jpg" class="lazy imgw100">
+            </div>
+        </div>
+        <div class="col-md-7 bl_text">
+            <h3 class="rus">Контакты</h3>
+            <h3 class="eng">Contact</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>Tel, WhatsApp, Telegram</b>
+<!--                    <b class="rus">Tel, WhatsApp, Telegram</b>-->
+<!--                    <b class="eng">Phone number, WhatsApp, Telegram</b>-->
+                </div>
+                <div class="col-md-8">
+                    <p>+7 706 4 121 121
+                    <br>izatblv</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b>E-mail</b>
+                </div>
+                <div class="col-md-8">
+                    <p>121izat@gmail.com</p>
+                </div>
+            </div>
+<!--            <div class="row">-->
+<!--                <div class="col-md-4">-->
+<!--                    <b>Skype</b>-->
+<!--                </div>-->
+<!--                <div class="col-md-8">-->
+<!--                    <p>izatsupra</p>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="row">
+                <div class="col-md-4">
+                    <b class="rus">Адрес проживания</b>
+                    <b class="eng">Address of residence</b>
+                </div>
+                <div class="col-md-8">
+                    <p class="rus">Казахстан, Алматы</p>
+                    <p class="eng">Kazakhstan, Almaty</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b class="rus">Гражданство</b>
+                    <b class="eng">Citizenship</b>
+                </div>
+                <div class="col-md-8">
+                    <p class="rus">Кыргызстан</p>
+                    <p class="eng">Kyrgyzstan</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <b class="rus">Готовность к командировкам и переездам</b>
+                    <b class="eng">Willingness to travel and relocate</b>
+                </div>
+                <div class="col-md-8">
+                    <p class="rus">есть</p>
+                    <p class="eng">yes</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/lazyload.min.js"></script>
+<script>
+    var lazyLoadInstance = new LazyLoad({
+        elements_selector: ".lazy"
+        // ... more custom settings?
+    });
+
+    function rus_show() {
+        $('.rus').show();
+        $('.eng').hide();
+    }
+
+    function eng_show() {
+        $('.eng').show();
+        $('.rus').hide();
+    }
+
+    function show_more() {
+        $('#more').show();
+        $('#show_more').hide();
+    }
+
+    function show_dar() {
+        $('.dar').show();
+        $('.show_dar').hide();
+    }
+
+    function show_alseco() {
+        $('.alseco').show();
+        $('.show_alseco').hide();
+    }
+
+    function show_tk() {
+        $('.tk').show();
+        $('.show_tk').hide();
+    }
+
+    function show_mers() {
+        $('.mers').show();
+        $('.show_mers').hide();
+    }
+
+    function show_demo() {
+        $('.demo').show();
+        $('.show_demo').hide();
+    }
+
+    function span_show() {
+        $('.span_hide').show();
+        $('.show_skils').hide();
+    }
+
+    function myFunction() {
+        // alert("Hello! I am an alert box!");
+        if ($('#menu').css('display') == 'none') {
+            alert("menu");
+        }
+    }
+
+    function show_menu() {
+        if ($('#menu').css('display') == 'none') {
+            $('#content').hide();
+            $('#menu').show();
+            return;
+        }
+        if ($('#content').css('display') == 'none') {
+            $('#content').show();
+            $('#menu').hide();
+            return;
+        }
+    }
+
+</script>
+</html>
+<!--todo dark mode-->
+<!--todo eng by default-->
+<!--todo my comp-->
+<!--todo check css header-->
+<!--todo check cross device-->
+<!--todo record docker test and add to demo-->

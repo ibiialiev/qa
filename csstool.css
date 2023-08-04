@@ -1,0 +1,178 @@
+/*<link rel="stylesheet" href="csstool.css">*/
+    body {margin: 0 111px;
+    font-family: Arial;
+    color: darkslategray;
+    background-color: lightgray}
+
+/*@media */
+@media (min-width: 1px) and (max-width: 600px) {
+    .amedia1{display: block !important;}
+}
+@media (min-width: 600px) and (max-width: 1200px){
+    .amedia2{display: block !important;}
+}
+@media (min-width: 1200px) {
+    .amedia3{display: block !important;}
+}
+/*img*/
+.imgw100{width: 100%}
+.imgbg{
+    background: url(img/bg.jpg) 50% 50%/ cover no-repeat;
+}
+/*text possition*/
+.text_possition2{text-align: center}
+.text_possition3{text-align: right}
+.text_possition4{
+    position: relative;
+    float: left;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.text_possition5{
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: center;
+}
+.text_possition6{
+    position: relative;
+    top: 50%;
+    transform: translate(0%, -50%);
+    text-align: right
+}
+.text_possition7{
+    position: relative;
+    top: 100%;
+    transform: translate(0%, -100%);
+}
+.text_possition8{
+    position: relative;
+    top: 100%;
+    transform: translate(0%, -100%);
+    text-align: center;
+}
+.text_possition9{
+    position: relative;
+    top: 100%;
+    transform: translate(0%, -100%);
+    text-align: right;
+}
+/*div possition*/
+.possition_fixed{
+    position: fixed !important;
+}
+.possiton0 {
+    position: relative;
+}
+.possiton1 {
+    position: absolute;
+    transform: translate(0%, 0%);
+}
+.possiton2 {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0%);
+}
+.possiton3 {
+    position: absolute;
+    left: 100%;
+    transform: translate(-100%, 0%);
+}
+.possiton4 {
+    position: absolute;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+.possiton5 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.possiton6 {
+    position: absolute;
+    top: 50%;
+    left: 100%;
+    transform: translate(-100%, -50%);
+}
+.possiton8 {
+    position: absolute;
+    left: 50%;
+    top:100%;
+    transform: translate(-50%, -100%);
+}
+.possiton7{
+    position: absolute;
+    top:100%;
+    transform: translate(0%, -100%);
+}
+.possiton9{
+    position: absolute;
+    top:100%;
+    left:100%;
+    transform: translate(-100%, -100%);
+}
+/*плитки*/
+.plitki0::after{
+    content: "";
+    display: block;
+    clear: both;
+    height: 0;
+}
+.plitki,.plitki2,.plitki3,.plitki4,.plitki5,.plitki6{
+    display: inline-block;
+    float: left;
+    height: 100%;
+}
+.plitki2{
+    width: 50%;
+}
+.plitki3{
+    width: 33.33333333333333%;
+}
+.plitki4{
+    width: 25%;
+}
+.plitki5{
+    width: 20%;
+}
+.plitki6{
+    width: 16.66666666666667%;
+}
+/*минимал див*/
+.mh,.mh3,.mh3,.mh3,.mh4{min-height: 20px}
+.mh3{background-color: #2b702f}
+.mh3{background-color: #475bff}
+.mh3{background-color: #903b39}
+.mh4{background-color: #317070}
+/*цвета*/
+.bg1{background-color: #2b702f}
+.bg2{background-color: #475bff}
+.bg3{background-color: #903b39}
+.bg4{background-color: #317070}
+.bg5{background-color: #706f3f}
+.bg6{background-color: #703b6e}
+.bg7{background-color: gray}
+.bg8{background-color: black}
+.bg9{background-color: white}
+/*кубики*/
+.cub1{
+    width: 10px;
+    height: 10px;
+}
+.cub2{
+    width: 50px;
+    height: 50px;
+}
+.cub3{
+    width: 100px;
+    height: 100px;
+}
+.cub4{
+    width: 200px;
+    height: 200px;
+}
+.cub5{
+    width: 500px;
+    height: 500px;
+}
